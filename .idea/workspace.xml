@@ -11,15 +11,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3517bfb-27ec-4aab-b9c9-30410608bf40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/AddDetails.component.style.android.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/Homepage.component.style.android.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/global.style.android.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AddDetails/AddDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AddList/AddList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AddListItem/AddListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Homepage/Homepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AddListItem/AddListItem.component.style.android.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomepageFooter/HomepageFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.component.style.android.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAddModal/NewAddModal.component.style.android.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAddModal/NewAddModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UserSpace/UserSpace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/Homepage.component.style.android.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/Homepage.component.style.android.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/global.style.android.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/global.style.android.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddDetails/AddDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddDetails/AddDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddList/AddList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddList/AddList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AddListItem/AddListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddListItem/AddListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Homepage/Homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -75,13 +82,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1386" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610099061247">
+      <screen x="-1680" y="26" width="1680" height="1010" />
+    </state>
+    <state x="-1386" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1680.26.1680.1010@-1680.26.1680.1010" timestamp="1610099061247" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1609940326175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1680.26.1680.1010@0.0.1536.824" timestamp="1609940326175" />
-    <state x="475" y="11" width="586" height="801" key="find.popup" timestamp="1609946359126">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1160" y="39" width="641" height="982" key="find.popup" timestamp="1610019008400">
+      <screen x="-1680" y="26" width="1680" height="1010" />
     </state>
+    <state x="-1160" y="39" width="641" height="982" key="find.popup/0.0.1536.824/-1680.26.1680.1010@-1680.26.1680.1010" timestamp="1610019008400" />
     <state x="475" y="11" width="586" height="801" key="find.popup/0.0.1536.824/-1680.26.1680.1010@0.0.1536.824" timestamp="1609946359126" />
   </component>
 </project>

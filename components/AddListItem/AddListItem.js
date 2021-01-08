@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
-import styles from '../../assets/css/Homepage.component.style.android.js';
+import styles from './AddListItem.component.style.android.js';
 import PropTypes from 'prop-types';
+import { Container, Header, Content, Icon, Card, CardItem, Right } from 'native-base';
 
 export default class AddList extends Component {
     state = {
     };
 
     static propTypes = {
-        item: PropTypes.object.isRequired,
+        item: PropTypes.any.isRequired,
         handleDelete: PropTypes.any.isRequired,
     }
 
@@ -19,13 +20,21 @@ export default class AddList extends Component {
   render() {
         return(
           <View style={styles.itemDiv}>
-              <Text style={styles.item}>{this.props.item.title} </Text>
-              <Button
-                   onPress={()=>this.props.handleDelete(this.props.item.id)}
-                   title="X"
-                   color="#841584"
-                   accessibilityLabel="Delete Add"
-              />
+           <Card style={{flex: 9}}>
+              <CardItem>
+                <Text style={styles.item} onPress={() => this.props.navigation.navigate('AddDetails', {item: this.props.item})}>
+                    {this.props.item.title}
+                </Text>
+              </CardItem>
+           </Card>
+           <Icon
+              name='trash'
+              onPress={()=>this.props.handleDelete(this.props.item.id)}
+              title="X"
+              color="#841584"
+              accessibilityLabel="Delete Add"
+              style={{flex: 1}}
+           />
           </View>
         )
     }
