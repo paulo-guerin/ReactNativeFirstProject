@@ -17,4 +17,8 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  itemImg:{
+    height: 50,
+    width:30,
+  }
 });

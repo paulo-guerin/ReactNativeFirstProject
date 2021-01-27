@@ -8,11 +8,13 @@ import HomepageFooter from '../HomepageFooter/HomepageFooter'
 import NewAddForm from '../NewAddForm/NewAddForm';
 import { Container, Header, Content } from 'native-base';
 import NewAddModal from '../NewAddModal/NewAddModal';
+import { Platform } from 'react-native';
+import * as Location from 'expo-location';
 
 export default class Homepage extends Component {
     state = {
         addList: [
-            {id: 1, title: 'Dvds Rick and Morty', category:'multimédia', description: 'Lorem Ipsum'},
+            {id: 1, title: 'Dvds Rick and Morty', category:'multimédia', description: 'Lorem Ipsum', image: 'https://images-na.ssl-images-amazon.com/images/I/61XyRAQ3KmL._AC_.jpg'},
             {id: 2, title: 'Dvds Bojack Horseman', category:'multimédia', description: 'Lorem Ipsum'},
             {id: 3, title: 'Dvds Steven Universe', category:'multimédia', description: 'Lorem Ipsum'},
             {id: 4, title: 'Dvds Gravity Falls', category:'multimédia', description: 'Lorem Ipsum'},
@@ -68,6 +70,7 @@ export default class Homepage extends Component {
     }
 
   render() {
+        console.log(Platform.OS, Platform.Version, Platform.isTV, Platform.isPad);
         return(
             <Container>
                 <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#9370DB" translucent = {true}/>

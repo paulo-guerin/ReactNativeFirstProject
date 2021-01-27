@@ -6,6 +6,10 @@ import { Container, Header, Content, Footer, FooterTab, Button, Icon } from 'nat
 
 export default class AddList extends Component {
 
+    state = {
+        addList: state => state.addList,
+    }
+
     constructor(props) {
         super(props);
     }

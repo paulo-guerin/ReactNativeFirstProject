@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList, Image } from 'react-native';
 import styles from './AddListItem.component.style.android.js';
 import PropTypes from 'prop-types';
 import { Container, Header, Content, Icon, Card, CardItem, Right } from 'native-base';
@@ -22,6 +22,10 @@ export default class AddList extends Component {
           <View style={styles.itemDiv}>
            <Card style={{flex: 9}}>
               <CardItem>
+                <Image
+                    style={styles.itemImg}
+                    source={{uri :this.props.item.image}}
+                />
                 <Text style={styles.item} onPress={() => this.props.navigation.navigate('AddDetails', {item: this.props.item})}>
                     {this.props.item.title}
                 </Text>
