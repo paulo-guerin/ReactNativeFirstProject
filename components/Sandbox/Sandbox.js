@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { Component, useCallback } from 'react';
-import { StyleSheet, Text, View, FlatList, SafeAreaView, TextInput, Alert, Modal, TouchableHighlight, Button, Share, Divider, Vibration, Platform, Linking, ScrollView} from 'react-native';
+import React, { Component, useCallback, useEffect } from 'react';
+import { StyleSheet, Text, View, FlatList, SafeAreaView, TextInput, Alert, Modal, TouchableHighlight, Button, Share, Divider, Vibration, Platform, Linking, ScrollView, TouchableOpacity} from 'react-native';
 import stylesSandbox from './Sandbox.component.style.android.js';
 import AddList from '../AddList/AddList';
 import { Container, Header, Content } from 'native-base';
 import * as Location from 'expo-location';
+import { Camera } from 'expo-camera';
 
 export default class Sandbox extends Component {
     state = {
@@ -15,7 +16,9 @@ export default class Sandbox extends Component {
           3 * 1000
         ],
         location : null,
-        text: 'Votre localisation',
+        textLocationLocation: 'Votre localisation',
+        type: Camera.Constants.Type.back,
+        stateCamera: null,
     };
 
     constructor(props) {
@@ -57,18 +60,51 @@ export default class Sandbox extends Component {
 
     getLocation = async () => {
           console.log('hello');
-          this.setState({text: 'Waiting...'});
+          this.setState({textLocation: 'Waiting...'});
           console.log(this.state);
           let { status } = await Location.requestPermissionsAsync();
           if (status !== 'granted') {
-            this.setState({text: 'Permission to access location denied'});
+            this.setState({textLocation: 'Permission to access location denied'});
             return;
           }
           let location = await Location.getCurrentPositionAsync({});
-          let text = JSON.stringify(location);
-          this.setState({location, text});
+          let textLocation = JSON.stringify(location);
+          this.setState({location, textLocation});
     };
 
+    useEffect = async () => {
+          const { status } = await Camera.requestPermissionsAsync();
+          if (status !== 'granted') {
+              this.setState({stateCamera: <Text>Permission to access camera denied</Text>});
+              return;
+          }
+          this.setStateCamera().bind();
+    };
+
+    setStateCamera = () => {
+        this.setState({stateCamera:
+          <View style={stylesSandbox.container}>
+            <Camera style={stylesSandbox.camera} type={this.state.type}>
+              <View style={stylesSandbox.buttonContainer}>
+                <TouchableOpacity
+                  style={stylesSandbox.button}
+                  onPress={this.setType}>
+                  <Text style={stylesSandbox.text}> Flip </Text>
+                </TouchableOpacity>
+              </View>
+            </Camera>
+          </View>
+        });
+    };
+
+    setType = () => {
+        if(this.state.type === Camera.Constants.Type.back){
+            this.setState({type: Camera.Constants.Type.front});
+        } else {
+         this.setState({type: Camera.Constants.Type.back});
+        }
+        this.setStateCamera().bind;
+    }
 
   render() {
         {/*Platform*/}
@@ -128,7 +164,14 @@ export default class Sandbox extends Component {
                 <Text style={[stylesSandbox.header, stylesSandbox.paragraph]}>Location</Text>
                 <View>
                   <Button title="Votre localisation" onPress={this.getLocation} />
-                  <Text>{this.state.text}</Text>
+                  <Text>{this.state.textLocation}</Text>
+                </View>
+
+                {/*Camera*/}
+                <Text style={[stylesSandbox.header, stylesSandbox.paragraph]}>Camera</Text>
+                <View>
+                  <Button title="Activer la caméra" onPress={this.useEffect} />
+                  {this.state.stateCamera}
                 </View>
             </ScrollView>
         )
