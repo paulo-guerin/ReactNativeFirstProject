@@ -24,6 +24,9 @@ export default class Homepage extends Component {
                  <Button onPress={() => this.props.navigation.navigate('UserSpace')}>
                    <Icon name="person"/>
                  </Button>
+                 <Button onPress={() => this.props.navigation.navigate('LogIn')}>
+                    <Icon name="build"/>
+                  </Button>
                  <Button onPress={() => this.props.navigation.navigate('Sandbox')}>
                    <Icon name="build"/>
                  </Button>

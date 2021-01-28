@@ -70,7 +70,7 @@ export default class Homepage extends Component {
     }
 
   render() {
-        console.log(Platform.OS, Platform.Version, Platform.isTV, Platform.isPad);
+
         return(
             <Container>
                 <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#9370DB" translucent = {true}/>

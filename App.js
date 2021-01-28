@@ -8,6 +8,8 @@ import UserSpace from './components/UserSpace/UserSpace';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import Sandbox from './components/Sandbox/Sandbox';
+import LogIn from './components/LogIn/LogIn';
+
 
 const Stack = createStackNavigator();
 const initialStateAdds = {
@@ -76,6 +78,11 @@ export default function App() {
                     name="UserSpace"
                     component={UserSpace}
                     options={{ title: 'Espace Utilisateur' }}
+                    />
+                    <Stack.Screen
+                    name="LogIn"
+                    component={LogIn}
+                    options={{ title: 'Connexion' }}
                     />
                     <Stack.Screen
                     name="Sandbox"

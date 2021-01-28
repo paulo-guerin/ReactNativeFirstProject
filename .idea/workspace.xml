@@ -6,16 +6,26 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3517bfb-27ec-4aab-b9c9-30410608bf40" name="Default Changelist" comment="">
+    <list default="true" id="81435596-7579-4a38-b2d8-867c793e927d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/LogInForm/LogInForm.component.style.android.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LogInForm/LogInForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Sandbox/Sandbox.component.style.android.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Sandbox/Sandbox.component.style.android.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Sandbox/Sandbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Sandbox/Sandbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Homepage/Homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomepageFooter/HomepageFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomepageFooter/HomepageFooter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +43,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/LogInForm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\2iTech\React et React Native\ReactNativeFirstProject\components\LogInForm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\2iTech\React et React Native\ReactNativeFirstProject\components" />
       <recent name="C:\wamp64\www\2iTech\React et React Native\ReactNativeFirstProject" />
