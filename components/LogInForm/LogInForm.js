@@ -17,22 +17,22 @@ class LogInForm extends Component {
     render() {
         return (
             <View>
-                      <Form>
-                        <Text>Email</Text>
-                        <Item regular>
-                          <Input
-                              onChangeText={(text) => this.props.handleChanges(text, 'email', 'LogIn')}
-                              value = {this.props.logInDatas}
-                          />
-                        </Item>
-                        <Text>Password</Text>
-                        <Textarea
-                            rowSpan={5}
-                            bordered
-                            onChangeText={(text) => this.props.handleChanges(text, 'password', 'LogIn')}
-                            value = {this.props.logInDatas}
-                        />
-                      </Form>
+              <Form>
+                <Text>Email</Text>
+                <Item regular>
+                  <Input
+                      onChangeText={(text) => this.props.handleChanges(text, 'email', 'LogIn')}
+                      value = {this.props.logInDatas}
+                  />
+                </Item>
+                <Text>Password</Text>
+                <Textarea
+                    rowSpan={5}
+                    bordered
+                    onChangeText={(text) => this.props.handleChanges(text, 'password', 'LogIn')}
+                    value = {this.props.logInDatas}
+                />
+              </Form>
                 <TouchableHighlight
                   style={{ ...styles.openButton, backgroundColor: "#9370DB" }}
                   onPress={()=>{this.props.handleClick('LogIn')}}
