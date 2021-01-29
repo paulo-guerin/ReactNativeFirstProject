@@ -20,20 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81435596-7579-4a38-b2d8-867c793e927d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/AddListItemRedux/AddListItemRedux.component.style.android.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/AddListItemRedux/AddListItemRedux.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/actions/addActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/reducers/addReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/reducers/authReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/reducers/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/fbConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AddList/AddList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AddList/AddList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LogInForm/LogInForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/LogInForm/LogInForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAddForm/NewAddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Sandbox/Sandbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Sandbox/Sandbox.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +102,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1680.26.1680.1010@0.0.1536.824" timestamp="1609940326175" />
-    <state x="474" y="11" width="736" height="801" key="find.popup" timestamp="1611930889966">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="-1067" y="54" width="641" height="982" key="find.popup" timestamp="1611934277353">
+      <screen x="-1680" y="26" width="1680" height="1010" />
     </state>
-    <state x="-1160" y="39" width="641" height="982" key="find.popup/0.0.1536.824/-1680.26.1680.1010@-1680.26.1680.1010" timestamp="1610019008400" />
+    <state x="-1067" y="54" width="641" height="982" key="find.popup/0.0.1536.824/-1680.26.1680.1010@-1680.26.1680.1010" timestamp="1611934277353" />
     <state x="474" y="11" width="736" height="801" key="find.popup/0.0.1536.824/-1680.26.1680.1010@0.0.1536.824" timestamp="1611930889966" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1611926889348">
       <screen x="0" y="0" width="1536" height="824" />

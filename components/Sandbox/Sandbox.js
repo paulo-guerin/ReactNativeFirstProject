@@ -78,7 +78,7 @@ export default class Sandbox extends Component {
               this.setState({stateCamera: <Text>Permission to access camera denied</Text>});
               return;
           }
-          this.setStateCamera().bind();
+          this.setStateCamera();
     };
 
     setStateCamera = () => {
@@ -103,7 +103,7 @@ export default class Sandbox extends Component {
         } else {
          this.setState({type: Camera.Constants.Type.back});
         }
-        this.setStateCamera().bind;
+        this.useEffect();
     }
 
   render() {
